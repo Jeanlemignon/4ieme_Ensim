@@ -1,15 +1,17 @@
 package fr.ensim.entity;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
-public class Secteur {
+public class Secteur implements Comparator<Secteur> {
 
 	private String typeAnimauxDansSecteur;
 	private List<Animal> animauxDansSecteur = new ArrayList<Animal>();
 	
 	
+	public Secteur() {}
 	public Secteur(String typeAnimauxDansSecteur) {
 		super();
 		this.typeAnimauxDansSecteur = typeAnimauxDansSecteur;
@@ -54,6 +56,11 @@ public class Secteur {
 	public String toString() {
 		return "Secteur [typeAnimauxDansSecteur=" + typeAnimauxDansSecteur + ", animauxDansSecteur="
 				+ animauxDansSecteur + "]";
+	}
+
+	public int compare(Secteur o1, Secteur o2) {
+		// TODO Auto-generated method stub
+		return o1.getNombreAnimaux()-o2.getNombreAnimaux();
 	}
 	
 	
