@@ -2,7 +2,7 @@ package fr.ensim.entity;
 
 public class Animal {
 
-	private String nomAnimal;
+	protected String nomAnimal;
 	private String typeAnimal;
 	
 	

@@ -2,7 +2,7 @@ package fr.ensim.entity;
 
 public class Chat extends Animal {
 
-	protected String nomAnimal;
+	//protected String nomAnimal;
 	
 	public Chat() {
 		super();
