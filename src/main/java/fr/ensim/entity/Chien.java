@@ -1,9 +1,6 @@
 package fr.ensim.entity;
 
 public class Chien extends Animal {
-
-	//protected String nomAnimal;
-	
 	public Chien() {
 		super();
 		// TODO Auto-generated constructor stub
